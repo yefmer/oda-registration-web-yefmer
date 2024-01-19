@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body{
+  width: 100%;
+  min-height: 50vh;
+  background-image:linear-gradient(to top,rgba(0, 0, 0, 0.7)50%,rgba(0, 0, 0, 0.7)50%),  url(11.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar{
+   width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo {
+  font-size: 35px;
+  font-family: arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+}
+
+.menu {   
+  flex: 1;
+  text-align: right;
+  float: right;
+  align-items: center;
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  margin-left: 62px;
+  margin-top: 27px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+
+}
+
+.menu ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.9s;
+
+}
+
+.menu ul li:hover::after {
+  width: 100%;
+}
+/* body {
+                min-height: 100vh;
+                background: photo_2023-01-30_00-48-10() no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+} */
+
+            .contact-section {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+}
+
+            .contact-info {
+                color: rgb(253, 246, 246);
+                max-width: 500px;
+                line-height: 65px;
+                padding-left: 50px;
+                font-size: 18px;
+}
+
+            .contact-info img {
+                margin-right: 20px;
+                font-size: 25px;
+                width: 40px;
+                border-radius: 6px;
+}
+
+            .contact-form {
+                max-width: 700px;
+                margin-right: 50px;
+}
+
+            .contact-info,
+            .contact-form {
+                flex: 1;
+}
+
+            .contact-form h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 35px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+}
+
+            .contact-form .text-box {
+                background: #000;
+                color: #fff;
+                border: none;
+                width: calc(50% - 10px);
+                height: 50px;
+                padding: 12px;
+                font-size: 15px;
+                border-radius: 5px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                opacity: 0.9;
+}
+
+            .contact-form .text-box:first-child {
+                margin-right: 15px;
+}
+
+            .contact-form textarea {
+                background: #000;
+                color: #fff;
+                border: none;
+                width: 100%;
+                padding: 12px;
+                font-size: 15px;
+                min-height: 200px;
+                max-height: 400px;
+                resize: vertical;
+                border-radius: 5px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                opacity: 0.9;
+}
+
+            .contact-form .send-btn {
+                float: right;
+                background: #2E94E3;
+
+                color: #fff;
+                border: none;
+                width: 120px;
+                height: 40px;
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border-radius: 5px;
+                cursor: pointer;
+
+}
+
+            .contact-form .send-btn:hover {
+                background: #0582E3;
+}
+
+            @media screen and (max-width: 950px) {
+                .contact-section {
+                    flex-direction: column;
+                }
+
+                .contact-info,
+                .contact-form {
+                    margin: 30px 50px;
+                }
+
+                .contact-form h2 {
+                    font-size: 30px;
+                }
+
+                .contact-form .text-box {
+                    width: 100%;
+                }
+}
+
+            /*css for alert messages*/
+
+            .alert-success {
+                z-index: 1;
+                background: #D4EDDA;
+                font-size: 18px;
+                padding: 20px 40px;
+                min-width: 420px;
+                position: fixed;
+                right: 0;
+                top: 10px;
+                border-left: 8px solid #3AD66E;
+                border-radius: 4px;
+}
+
+            .alert-error {
+                z-index: 1;
+                background: #FFF3CD;
+                font-size: 18px;
+                padding: 20px 40px;
+                min-width: 420px;
+                position: fixed;
+                right: 0;
+                top: 10px;
+                border-left: 8px solid #FFA502;
+                border-radius: 4px;
+}
+ 
+
+</style>
+
+ <body>
+    <nav>
+
+        <body style="background-color: #000948;">
+          <div class="main">
+                <div class="navbar">
+                    <div class="icon">
+                        <h2 class="logo"><img src="logo.png" width="90"
+                                height="90" class="logo"></h2>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="ict.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="design.html">DESIGN</a></li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+          <!--alert messages start
+    <div class="alert-success">
+      <span>Message Sent! Thank you for contacting us.</span>
+    </div>
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div>
+    alert messages end-->
+
+    <!--contact section start-->
+    <div class="contact-section">
+      <div class="contact-info">
+          <div><a href="http://www.wmoda.org.et/"><img src="google.png" alt=""></a></div>
+          <div><a href="http://www.wmoda.org.et/"> <img src="fb.png" alt=""></a> </div>
+          <div><a href="t.me/odawmo"><img src="tg.png" alt=""></a>  </div>
+          <div><a href="email"><img src="email.png" alt=""></a></div>
+          <div><img src="tel.png" alt="">+251116392234</div>
+          <div><img src="address.png" alt=""> BISHOFTU, Oromia, Ethiopia</div>
+      </div>
+      <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form class="contact" action="" method="post">
+              <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+              <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <input type="submit" name="submit" class="send-btn" value="Send">
+          </form>
+      </div>
+   </div>
+    </nav> 
+  </body>
+</html>

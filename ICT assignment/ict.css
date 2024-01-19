@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 50vh;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.7)50%,rgba(0, 0, 0, 0.7)50%),url(11.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    font-size: 35px;
+    font-family: arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    flex: 0;
+    text-align: right;
+    float: right;
+    align-items: center;
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-left: 62px;
+    margin-top: 27px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase ;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+
+}
+.menu ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.9s;
+
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    position: absolute;    
+    top: 30%;
+    color: #fff; 
+ }
+ h1{ 
+    display: flex;
+    position: relative;    
+    width: 80%;
+    top:5%;
+    font-size :50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    left: 90px;
+
+}
+p{
+    /* display: flex;s
+    align-items: center;
+    text-align: center;
+    justify-content: center; */
+    font-size: medium;
+}
+button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;    
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+    
+}
+    
+button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.content-s{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    position: absolute;
+    top: 70%;
+   
+} 

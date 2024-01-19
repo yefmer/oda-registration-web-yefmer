@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 50vh;
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.7)50%,rgba(0, 0, 0, 0.7)50%), url(11.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    font-size: 35px;
+    font-family: arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    flex: 0;
+    text-align: right;
+    float: right;
+    align-items: center;
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-left: 62px;
+    margin-top: 27px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase ;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+
+}
+.menu ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.9s;
+
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+button.f{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;    
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+    
+}
+button.s{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;    
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+    
+}
+    
+button:active.f{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+button:active.s{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   width: 600px;
+   height: 150px;
+   background: rgb(54, 47, 47);
+   border-radius: 20%;
+   margin-left: 100px;
+   top: 200%; 
+   position: relative;
+   box-sizing: border-box;
+   padding-left: 50px;
+   
+}
+.content p{
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 50px;
+
+} 
+    
+   
+
+
+.content-s{
+    width: 20%;
+    padding-left: 60px;
+   
+}
+
+.content-d{
+    width: 60%;
+    padding-right: 40px;
+   
+
+} 
+
+
+</style>
+
+<body>
+    <nav>
+        <body style="background-color: #000948;">
+            <div class="main">
+                <div class="navbar">
+                    <div class="icon">
+                        <h2 class="logo"><img src="logo.png" width="90" height="90" class="logo"></h2>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="ict.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="design.html">DESIGN</a></li>
+                        </ul>
+                    </div>
+                    
+                     <div class="content">
+                          <p>Register as:-</p>
+                     <div class="content-s"> 
+                        <a href="register.html"><button class="s">NEW</button></a>
+                      </div>
+                     <div class="content-d"> 
+                        <a href="new.html"><button class="f">SENIOR</button></a>
+                     </div>
+                
+                    </div>
+                    </div>
+                   
+                  
+                </div>
+            </div>
+                
+        </body>
+    </nav>
+</html>
